@@ -7,21 +7,31 @@ body{
   color: red;
   background-color: #e1e1e1;
   border-radius: 2px;
-  top: 10%;
+  top: 30%;
   margin-top: 100px;
   width: 200px;
   height: 300px;
   box-shadow: 0 4px 8px 0 #646464, 0 6px 20px 0 #646464;
+  opacity: 0;
+
 }
 
 #tile1{
   left: 15%;
+  transition: all 1s ease-out;
 }
 #tile2{
   left: 40%;
+  transition: all 1.75s ease-out;
 }
 #tile3{
   left: 65%;
+  transition: all 2.5s ease-out;
+}
+
+.raised{
+  opacity: 1;
+  top: 10%;
 }
 
 @media screen and (max-width: 840px){
@@ -46,4 +56,24 @@ body{
   #tile3{
     left: 682.5px;
   }
+}
+
+.image{
+  position: relative;
+  width: 90%;
+  height: 40%;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.text{
+  position: relative;
+  width: 90%;
+  height: 50%;
+  background-color: green;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
 }
